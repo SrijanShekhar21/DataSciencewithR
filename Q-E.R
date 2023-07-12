@@ -1,8 +1,6 @@
 library(rvest)
 library(tidyverse)
 
-# Question e)
-
 netflix = read_html("https://editorial.rottentomatoes.com/guide/best-netflix-movies-to-watch-right-now/")
 movieNames = netflix %>% html_elements(".article_movie_title a") %>% html_text()
 movieYear = netflix %>% html_elements(".start-year") %>% html_text()
