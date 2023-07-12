@@ -1,4 +1,3 @@
-# Question d)
 MontyHall <- function(){
     # Set the winning door to 2 to simplify bit arithmetic later
     winDoor = 2
