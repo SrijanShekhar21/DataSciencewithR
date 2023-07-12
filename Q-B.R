@@ -1,8 +1,6 @@
 library(rvest)
 library(tidyverse)
 
-# Question b)
-
 bTask <- function(bUrl){
     bNode = html_nodes(bUrl, "table")
     head(bNode)
